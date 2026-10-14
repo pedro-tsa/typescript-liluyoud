@@ -1,4 +1,3 @@
-"use strict";
 let paciente = {
     cpf: "123.456.789-00",
     nome: "Ana Souza",
@@ -34,6 +33,7 @@ let dados = paciente;
 // original, então não sabe que 'nome' existe. A checagem usa o tipo declarado
 // da variável, não o valor que está dentro dela.
 let x = 10;
+export {};
 // let y: object = 10;
 // '{}' significa "qualquer valor que não seja null nem undefined". Como o
 // número 10 tem propriedades (por exemplo, toFixed), ele se encaixa nesse

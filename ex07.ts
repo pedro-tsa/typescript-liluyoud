@@ -1,3 +1,5 @@
+export {};
+
 type Notificador = (destinatario: string, mensagem: string) => void;
 
 const porEmail: Notificador = (destinatario, mensagem) => {

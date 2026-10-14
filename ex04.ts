@@ -1,3 +1,5 @@
+export {};
+
 const itens: { nome: string; preco: number; quantidade: number }[] = [
   { nome: "Arroz 5kg", preco: 28.9, quantidade: 1 },
   { nome: "Feijão 1kg", preco: 8.49, quantidade: 2 },
@@ -8,7 +10,7 @@ const itens: { nome: string; preco: number; quantidade: number }[] = [
 
 const nomes: string[] = itens.map(item => item.nome);
 
-const caros = itens.filter(item => item.preco > 10);
+const caros: { nome: string; preco: number; quantidade: number }[] = itens.filter(item => item.preco > 10);
 
 const total: number = itens.reduce(
   (soma, item) => soma + item.preco * item.quantidade,

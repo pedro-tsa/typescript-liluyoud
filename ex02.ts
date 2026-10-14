@@ -1,4 +1,6 @@
-const nomeDigitado: string = " maria  da silva ";
+export {};
+
+const nomeDigitado: string = "   maria   da silva  ";
 
 function formatarNome(nome: string): string {
   const excecoes: string[] = ["da", "de", "do"];

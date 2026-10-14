@@ -1,4 +1,3 @@
-"use strict";
 const respostaOk = '{"cidade":"Porto Velho","temperatura":34,"umidade":0.62}';
 const respostaQuebrada = '{"cidade":"Porto Velho","temperatura":"quente"}';
 const respostaInvalida = '{ cidade: Porto Velho ';
@@ -47,3 +46,4 @@ for (const resposta of respostas) {
         }
     }
 }
+export {};

@@ -1,3 +1,5 @@
+export {};
+
 let paciente: {
   readonly cpf: string;
   nome: string;

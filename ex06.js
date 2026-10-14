@@ -1,4 +1,3 @@
-"use strict";
 var StatusPedido;
 (function (StatusPedido) {
     StatusPedido[StatusPedido["Recebido"] = 1] = "Recebido";
@@ -56,3 +55,4 @@ const pagamento = FormaPagamento.Pix;
 // solto não entre sem querer. Enums numéricos não têm essa proteção completa,
 // e mapeamento reverso também não existe nos de string.
 console.log(`Pagamento: ${pagamento}`);
+export {};

@@ -1,5 +1,4 @@
-"use strict";
-const nomeDigitado = " maria  da silva ";
+const nomeDigitado = "   maria   da silva  ";
 function formatarNome(nome) {
     const excecoes = ["da", "de", "do"];
     return nome
@@ -31,3 +30,4 @@ Subtotal: R$ ${subtotal.toFixed(2)}
 Desconto fidelidade: R$ ${desconto.toFixed(2)}
 TOTAL: R$ ${total.toFixed(2)}`;
 console.log(cupom);
+export {};

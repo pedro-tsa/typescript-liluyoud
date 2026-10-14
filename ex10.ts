@@ -1,3 +1,5 @@
+export {};
+
 type Placa = string;
 type Periodo = [entrada: number, saida: number];
 
@@ -157,7 +159,7 @@ fechados.forEach(t => {
 
 const faturamento: number = fechados.reduce((soma, t) => soma + (t.valor ?? 0), 0);
 
-const contagem = tickets.reduce(
+const contagem: Record<Veiculo["tipo"], number> = tickets.reduce(
   (acc, t) => ({ ...acc, [t.veiculo.tipo]: acc[t.veiculo.tipo] + 1 }),
   { carro: 0, moto: 0, caminhao: 0 }
 );

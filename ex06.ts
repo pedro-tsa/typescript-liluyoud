@@ -1,3 +1,5 @@
+export {};
+
 enum StatusPedido {
   Recebido = 1,
   EmPreparo,

@@ -1,4 +1,3 @@
-"use strict";
 const leituras = [
     ["Porto Velho", 34],
     ["Curitiba", 12],
@@ -24,3 +23,4 @@ const capitalOficial = ["RO", "Porto Velho"];
 // Erro: Cannot assign to '1' because it is a read-only property.
 // capitalOficial[1] = "Ariquemes";
 console.log(`Mínima: ${minima}°C | Máxima: ${maxima}°C | Média: ${mediaGeral.toFixed(1)}°C`);
+export {};

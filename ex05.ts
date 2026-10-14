@@ -1,3 +1,5 @@
+export {};
+
 type Leitura = [cidade: string, temperatura: number];
 
 const leituras: Leitura[] = [

@@ -1,4 +1,3 @@
-"use strict";
 // Ao incluir Van na união sem tratá-la no switch de calcularTarifa, aparece:
 // Type 'Van' is not assignable to type 'never'.
 // No default, 'v' só deveria sobrar como 'never' (nenhum tipo restante) se
@@ -111,3 +110,4 @@ catch (erro) {
         registrar(`Erro ao ler veículo: ${erro.message}`);
     }
 }
+export {};

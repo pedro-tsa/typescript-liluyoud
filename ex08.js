@@ -1,4 +1,3 @@
-"use strict";
 let codigo = 42;
 function formatarCodigo(c) {
     if (typeof c === "number") {
@@ -50,3 +49,4 @@ console.log(`Cliente: ${formatarCodigo(codigo)} | Camiseta: ${tamanho}`);
 console.log(`Entrega: ${rua} - ${complemento ?? "(sem complemento)"}`);
 console.log(`Frete para o sul: R$ ${calcularFrete("sul").toFixed(2)}`);
 console.log(`Telefone: ${limparTelefone("(69) 99999-0000")}`);
+export {};

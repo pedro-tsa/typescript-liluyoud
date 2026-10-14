@@ -1,62 +1,34 @@
 export {};
 
-type Produto = {
-    nomeProduto: string;
-    precoUnitario: number;
-    quantidade: number;
-}
+// Produtos com anotação de tipo explícita
+const nomeProduto1: string = "Pão francês";
+const precoUnitario1: number = 0.75;
+let quantidade1: number = 12;
 
+const nomeProduto2: string = "Bolo de cenoura";
+const precoUnitario2: number = 18.5;
+const quantidade2: number = 2;
+
+// Tipo inferido: boolean
 let aberta = true;
-let paesVendidos : number  = 1_250_000;
-let categoria : string = "0x1A";
 
-//boolean como tipo inferido;
+// Cálculo da venda
+const subtotal1: number = precoUnitario1 * quantidade1;
+const subtotal2: number = precoUnitario2 * quantidade2;
+const total: number = subtotal1 + subtotal2;
 
-function subtotal(p: Produto) : number
-{
-    return p.precoUnitario * p.quantidade;
-}
+// Separadores numéricos
+const paesVendidos: number = 1_250_000;
 
-function totalFunc(p:Produto[]) : number
-{
-    let total: number = 0;
-    for(const i of p)
-    {
-        total += subtotal(i);
-    }
-    return total;
-}
+// Código da categoria "Panificação" em hexadecimal
+const categoria: number = 0x1a;
 
-type Carrinho = {
-    itens: Produto[];
-    total: number;
-}
+// Erro: Type 'string' is not assignable to type 'number'.
+// quantidade1 = "doze";
 
-let paoFrances : Produto = {
-    nomeProduto: "Pão Francẽs",
-    precoUnitario: 0.75,
-    quantidade: 12
-}
-
-let boloCenoura : Produto = {
-    nomeProduto: "Bolo de Cenoura",
-    precoUnitario: 18.50,
-    quantidade: 2
-}
-
-let carrinho : Carrinho = {
-    itens: [paoFrances, boloCenoura],
-    total: 0
-}
-
-carrinho.total = totalFunc(carrinho.itens);
-
-for (const i of carrinho.itens) {
-  let _subtotal: number = subtotal(i);
-  console.log(`${i.nomeProduto}: ${i.quantidade} x R$ ${i.precoUnitario.toFixed(2)} = R$ ${_subtotal.toFixed(2)}`);
-}
-
-console.log(`Total: R$ ${carrinho.total.toFixed(2)}`);
-console.log(`Padaria Aberta? ${aberta}`);
+console.log(`${nomeProduto1}: ${quantidade1} x R$ ${precoUnitario1.toFixed(2)} = R$ ${subtotal1.toFixed(2)}`);
+console.log(`${nomeProduto2}: ${quantidade2} x R$ ${precoUnitario2.toFixed(2)} = R$ ${subtotal2.toFixed(2)}`);
+console.log(`Total: R$ ${total.toFixed(2)}`);
+console.log(`Padaria aberta? ${aberta}`);
 console.log(`Pães vendidos no ano: ${paesVendidos}`);
-console.log(`Categoria: ${parseInt(categoria, 16)}`);
+console.log(`Categoria: ${categoria}`);

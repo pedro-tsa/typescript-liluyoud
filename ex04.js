@@ -1,4 +1,3 @@
-"use strict";
 const itens = [
     { nome: "Arroz 5kg", preco: 28.9, quantidade: 1 },
     { nome: "Feijão 1kg", preco: 8.49, quantidade: 2 },
@@ -20,3 +19,4 @@ console.log(`Itens: ${nomes.join(", ")}`);
 console.log(`Acima de R$ 10: ${caros.map(item => item.nome).join(", ")}`);
 console.log(`Total da compra: R$ ${total.toFixed(2)}`);
 console.log(`Itens na despensa: ${itensNaDespensa}`);
+export {};

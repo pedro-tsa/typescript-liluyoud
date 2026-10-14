@@ -1,3 +1,5 @@
+export {};
+
 let codigo: number | string = 42;
 
 function formatarCodigo(c: number | string): string {

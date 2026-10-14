@@ -1,4 +1,3 @@
-"use strict";
 const porEmail = (destinatario, mensagem) => {
     console.log(`[E-MAIL] para ${destinatario}: ${mensagem}`);
 };
@@ -25,6 +24,7 @@ notificarTodos(["(69) 99999-0000"], avisoLongo, porSms);
 // Erro: Type 'number' is not assignable to type 'void'.
 // function teste(): void { return 10; }
 const contar = (d, m) => m.length;
+export {};
 // Quando um TIPO de função declara retorno void, ele quer dizer "quem chama
 // não vai usar o retorno", e não "a função é proibida de retornar algo".
 // Por isso o TypeScript aceita uma função que devolve number nesse lugar:
